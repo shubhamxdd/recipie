@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const Wrapper = styled.div`
   margin: 4rem 0;
@@ -46,4 +47,36 @@ const List = styled.div`
   margin: 2rem 0;
 `;
 
-export { Wrapper, Card, Gradient, List };
+const StyledNavLink = styled(NavLink)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  margin-right: 2rem;
+  text-decoration: none;
+  background: linear-gradient(35deg, #494949, #313131);
+  height: 6rem;
+  width: 6rem;
+  cursor: pointer;
+  transform: scale(0.7);
+  h4 {
+    color: white;
+    font-size: 0.9rem;
+  }
+  svg {
+    color: white;
+    font-size: 1.5rem;
+  }
+  &.active {
+    background: linear-gradient(to right, #f27121, #e94057);
+
+    svg {
+      color: white;
+    }
+    h4 {
+      color: white;
+    }
+  }
+`;
+export { Wrapper, Card, Gradient, List, StyledNavLink };
