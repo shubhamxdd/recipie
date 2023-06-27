@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Grid, Card } from "../styles/cuisineStyles";
+import { Link } from "react-router-dom";
 
 const Searched = () => {
   const [searched, setSearched] = useState([]);
@@ -15,17 +16,19 @@ const Searched = () => {
     console.log(data);
     setSearched(data.results);
   };
-    useEffect(() => {
-      fetchSearch(params.search);
-    }, [params.search]);
+  useEffect(() => {
+    fetchSearch(params.search);
+  }, [params.search]);
 
   return (
     <Grid>
       {searched.map((item) => {
         return (
           <Card key={item.id}>
-            <img src={item.image} alt={item.title} />
-            <h4>{item.title}</h4>
+            <Link to={`/recipie/${item.id}`}>
+              <img src={item.image} alt={item.title} />
+              <h4>{item.title}</h4>
+            </Link>
           </Card>
         );
       })}
