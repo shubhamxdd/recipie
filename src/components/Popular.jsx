@@ -9,7 +9,7 @@ const Popular = () => {
 
   const API_URL = `https://api.spoonacular.com/recipes/random?apiKey=${
     import.meta.env.VITE_API_KEY
-  }&number=5`;
+  }&number=8`;
 
   const fetchPopularRecipes = async () => {
     const checkLocalStorage = localStorage.getItem("popular");
@@ -20,7 +20,6 @@ const Popular = () => {
       const response = await fetch(API_URL);
       const data = await response.json();
       localStorage.setItem("popular", JSON.stringify(data.recipes));
-      // console.log(data.recipes);
       setPopularRecipes(data.recipes);
     }
   };
