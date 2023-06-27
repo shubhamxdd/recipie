@@ -40,6 +40,10 @@ const Gradient = styled.div`
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
 `;
+const List = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+`;
 
-
-export { Wrapper, Card, Gradient };
+export { Wrapper, Card, Gradient, List };
