@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { Form } from "../styles/searchStyles";
+import { useNavigate } from "react-router-dom";
 
 const Search = () => {
   const [query, setQuery] = useState("");
+  const navigate = useNavigate();
 
   return (
     <Form
       onSubmit={(e) => {
         e.preventDefault();
+        navigate(`/search/${query}`)
       }}
     >
       <div>
