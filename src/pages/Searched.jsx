@@ -13,7 +13,6 @@ const Searched = () => {
     }&query=${name}`;
     const response = await fetch(API_URL);
     const data = await response.json();
-    console.log(data);
     setSearched(data.results);
   };
   useEffect(() => {

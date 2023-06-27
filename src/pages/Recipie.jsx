@@ -13,7 +13,6 @@ const Recipie = () => {
     }/information?apiKey=${import.meta.env.VITE_API_KEY}`;
     const response = await fetch(API_URL);
     const data = await response.json();
-    console.log(data);
     setDetails(data);
   };
 
