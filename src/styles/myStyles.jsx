@@ -46,7 +46,6 @@ const List = styled.div`
   justify-content: center;
   margin: 2rem 0;
 `;
-
 const StyledNavLink = styled(NavLink)`
   display: flex;
   justify-content: center;
@@ -80,4 +79,19 @@ const StyledNavLink = styled(NavLink)`
     }
   }
 `;
-export { Wrapper, Card, Gradient, List, StyledNavLink };
+const Logo = styled(NavLink)`
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Lobster Two", cursive;
+`;
+const Nav = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 0rem;
+  svg {
+    font-size: 3.5rem;
+  }
+`;
+
+export { Wrapper, Card, Gradient, List, StyledNavLink, Logo, Nav };

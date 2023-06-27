@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Grid, Card } from "../styles/cuisineStyles";
-import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 
 const Cuisine = () => {
@@ -13,7 +12,6 @@ const Cuisine = () => {
     }&cuisine=${name}`;
     const response = await fetch(API_URL);
     const data = await response.json();
-    console.log(data);
     setCuisine(data.results);
   };
   useEffect(() => {
@@ -21,7 +19,12 @@ const Cuisine = () => {
   }, [params.type]);
 
   return (
-    <Grid>
+    <Grid
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 0}}
+    transition={{duration: 0.5}}
+    >
       {cuisine.map((item) => {
         return (
           <Card key={item.id}>
