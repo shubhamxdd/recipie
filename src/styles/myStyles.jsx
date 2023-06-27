@@ -60,6 +60,7 @@ const StyledNavLink = styled(NavLink)`
   width: 6rem;
   cursor: pointer;
   transform: scale(0.7);
+  padding: 0 5px;
   h4 {
     color: white;
     font-size: 0.9rem;
