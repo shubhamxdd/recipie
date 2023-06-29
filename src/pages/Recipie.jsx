@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { DetailWrapper, Button, Info } from "../styles/recipieStyles";
+import { DetailWrapper, Button, Info, Img } from "../styles/recipieStyles";
 
 const Recipie = () => {
   const [details, setDetails] = useState({});
@@ -24,7 +24,13 @@ const Recipie = () => {
     <DetailWrapper>
       <div>
         <h2>{details.title}</h2>
-        <img src={details.image} alt={details.title} />
+        <Img
+          src={details.image}
+          alt={details.title}
+          style={{
+
+          }}
+        />
       </div>
       <Info>
         <Button

@@ -35,10 +35,10 @@ const Veg = () => {
         perPage: 1,
       },
       600: {
-        perPage: 3,
+        perPage: 1,
       },
       900: {
-        perPage: 4,
+        perPage: 3,
       }
     },
     arrows: false,
