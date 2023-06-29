@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 const Form = styled.form`
-  margin: 0rem 10rem;
+  margin: 0rem 5rem;
   div {
     position: relative;
     width: 100%;
@@ -12,7 +12,10 @@ const Form = styled.form`
     font-size: 0.84rem;
     color: white;
     width: 100%;
-    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 2rem;
     border: none;
     outline: none;
     border-radius: 1rem;

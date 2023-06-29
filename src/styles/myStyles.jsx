@@ -43,7 +43,7 @@ const Gradient = styled.div`
 `;
 const List = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 2rem 0;
 `;
 const StyledNavLink = styled(NavLink)`
@@ -52,7 +52,6 @@ const StyledNavLink = styled(NavLink)`
   align-items: center;
   flex-direction: column;
   border-radius: 50%;
-  margin-right: 2rem;
   text-decoration: none;
   background: linear-gradient(35deg, #494949, #313131);
   height: 6rem;
