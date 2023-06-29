@@ -29,7 +29,7 @@ const Veg = () => {
   }, []);
 
   const options = {
-    perPage: 2,
+    perPage: 3,
         breakpoints: {
       350: {
         perPage: 1,
