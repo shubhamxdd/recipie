@@ -9,7 +9,7 @@ const Cuisine = () => {
   const fetchCuisine = async (name) => {
     const API_URL = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${
       import.meta.env.VITE_API_KEY
-    }&cuisine=${name}`;
+    }&cuisine=${name}&number=32`;
     const response = await fetch(API_URL);
     const data = await response.json();
     setCuisine(data.results);

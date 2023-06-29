@@ -9,7 +9,7 @@ const Veg = () => {
 
   const API_URL = `https://api.spoonacular.com/recipes/random?apiKey=${
     import.meta.env.VITE_API_KEY
-  }&number=8&tags=vegetarian`;
+  }&number=10&tags=vegetarian`;
 
   const fetchVegRecipes = async () => {
     const checkLocalStorage = localStorage.getItem("veg");
