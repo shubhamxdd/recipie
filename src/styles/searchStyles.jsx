@@ -11,7 +11,7 @@ const Form = styled.form`
     background: linear-gradient(35deg, #494949, #313131);
     font-size: 0.84rem;
     color: white;
-    width: 100%;
+    width: 105%;
     display: flex;
     justify-content: center;
     align-items: center;

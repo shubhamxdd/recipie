@@ -43,7 +43,7 @@ const Gradient = styled.div`
 `;
 const List = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 2rem 0;
 `;
 const StyledNavLink = styled(NavLink)`
