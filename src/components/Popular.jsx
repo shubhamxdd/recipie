@@ -30,6 +30,17 @@ const Popular = () => {
 
   const options = {
     perPage: 4,
+    breakpoints: {
+      350: {
+        perPage: 1,
+      },
+      600: {
+        perPage: 2,
+      },
+      900: {
+        perPage: 3,
+      }
+    },
     arrows: false,
     pagination: false,
     drag: "free",
