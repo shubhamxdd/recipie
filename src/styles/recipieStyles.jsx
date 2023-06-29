@@ -27,7 +27,7 @@ const Button = styled.button`
   color: #313131;
   background: white;
   border: 1px solid black;
-  margin: 0.3rem;
+  margin: 0 0.5rem;
 `;
 const Info = styled.div`
   /* margin-left: 5rem; */
